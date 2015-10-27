@@ -1,0 +1,78 @@
+h1 {
+  font-family: ‘Roboto’, Arial, serif;
+  font-weight: 400;
+}
+h4 {
+  padding-top: 20px;
+}
+
+body {
+  background-color: white;
+}
+
+img.logo {
+   -webkit-filter: invert(1);
+   filter: invert(1);
+ }
+
+.headerImage {
+  padding-top: 5px;
+  padding-left: 29px;
+}
+
+.headerbar {
+  background-color: black; 
+}
+
+.headerbutton {
+  padding-top: 7px;
+}
+
+
+.whiteContent {
+  padding-top: 30px;
+  padding-bottom: 120px;
+}
+
+.facebookButton {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer {
+  border-color: gray;
+  border-top: solid #e3e1dc 1px;
+  padding-top: 30px; 
+  padding-bottom: 30px; 
+}
+
+.grayContent {
+  color: white; 
+  background-color: #585858; 
+  padding-top: 30px; 
+  padding-bottom: 30px; 
+}
+
+
+.statement {
+  padding-top: 30px;
+}
+.appStoreButton {
+  padding: 0px;  
+}
+.reds {
+  opacity: 0.1; 
+}
+.opaque {
+  opacity: 0.1; 
+}
+
+.otherOpaque {
+  opacity: 0.1; 
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 850px; 
+}
