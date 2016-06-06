@@ -4,17 +4,10 @@
     <meta charset="UTF-8">
     <title>Tize</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    
     <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
-<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
-
-        <link rel="stylesheet" href="css/style.css">
-
-    
-    
-    
+    <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -22,56 +15,107 @@
     <head>
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
-<div class="container">
-  <div class="row">
-    <div class="headerbar">
-      <div class="col-xs-6">
-        <h3>TIZE</h3>
-      </div>
-      <div class="col-xs-6 text-right">
-        <div class="headerbutton">
-          <button type="button" class="btn btn-primary navbar-btn navbar-right">Download</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="whiteContent">
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
-    <div class="row">
-      <div class = "col-xs-12"> 
-        <img class = "center-block animated pulse infinite" height = "150px" width = "150px" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/188385/tize@2x.png">
-      <div class="statement col-sm-12 text-center  animated bounceInDown">
-        <h1 class="text-center">Isn't it time you entered social reality? </h1>
-        <h5 class="text-center"> Tize connects you with friends in a way that you've probably been missing. Face to face. Real time. Real friendships. Forget social media, at Tize, we just want you to reenter social reality.</h5>
-        <div class="facebookButton">
-          <a class="btn-lg btn-primary" href="http://www.facebook.com">
-            <i class="fa fa-facebook-square fa-1x"></i> Visit Our Facebook</a>
-        </div>
-      </div>
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainHeader" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">NCM</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="mainHeader">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Home</span class="sr-only"></span></a></li>
+        <li><a href="#aboutMe">About Me</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#WeatherMap">Weather Map</a></li>
+            <li><a href="#RandomQuoteMachine">Random Quote Machine</a></li>
+            <li><a href="#PomodoroClock">Pomodoro Clock</a></li>
+            <li><a href="#TwitchAPI">Twitch API</a></li>
+            <li><a href="#Calculator">Calculator</a></li>
+
+            <!--<li><a href="#GoogleMapsPractice">Google Maps Practice</a></li> -->
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>Nicholas C. Morrell</h1>
+    <p>Welcome! Check out my projects below!</p>
+    <button class="btn btn-success btn-lg" href="http://www.github.com/nicholascm90">Github</a>
+    </button>
+  </div>
+</div>
+
+
+<div class="col-md-6 col-sm-12">
+  <div class="thumbnail card">
+    <a name="PomodoroClock"></a>
+    <p data-height="459" data-theme-id="13542" data-slug-hash="JYPNaQ" data-default-tab="result" data-user="nicholascm90" class='codepen'>See the Pen <a href='http://codepen.io/nicholascm90/pen/JYPNaQ/'>Pomodoro Clock</a> by Nicholas (<a href='http://codepen.io/nicholascm90'>@nicholascm90</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+    <div class="caption">
+      <h3><a href = "http://codepen.io/nicholascm90/pen/JYPNaQ/">Pomodoro Clock</a></h3>
+      <p>The Pomodoro Clock allows the user to set a work session and break session length. Once the timer is started, sessions alternate while keeping the user aware of their progress. The project utilizes Bootstrap and jQuery. Separately from the challenge,
+        I also threw in a To Do list from the <a href="http://www.angularjs.org">AngularJS.org</a> tutorials that makes this application infinitely more useful for me at work.</p>
+    </div>
+
+  </div>
+</div>
+
+<div class="col-md-6 col-sm-12">
+  <div class="thumbnail card">
+    <a name="TwitchAPI"></a>
+    <p data-height="459" data-theme-id="13542" data-slug-hash="ojLvMY" data-default-tab="result" data-user="nicholascm90" class='codepen'>See the Pen <a href='http://codepen.io/nicholascm90/pen/ojLvMY/'>ReactJS | Twitch JSON API Generic</a> by Nicholas (<a href='http://codepen.io/nicholascm90'>@nicholascm90</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+    <div class="caption">
+      <h3><a href = "http://codepen.io/nicholascm90/pen/ojLvMY/">Twitch API</a></h3>
+      <p>This project uses the Twitch JSON API to display the status of users from a pre-determined "friends" list. I used this project as an excuse to learn ReactJS as well as continuing to use Bootstrap, FontAwesome, and Animate.css.</p>
     </div>
   </div>
 </div>
+
+<div class="col-md-6 col-sm-12">
+  <div class="thumbnail card">
+    <a name="Calculator"></a>
+    <p data-height="503" data-theme-id="13542" data-slug-hash="rOdybw" data-default-tab="result" data-user="nicholascm90" class='codepen'>See the Pen <a href='http://codepen.io/nicholascm90/pen/rOdybw/'>Calculator using knockoutJS</a> by Nicholas (<a href='http://codepen.io/nicholascm90'>@nicholascm90</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+    <div class="caption">
+      <h3><a href = "http://codepen.io/nicholascm90/pen/ojLvMY/">Calculator</a></h3>
+      <p>This project is a calculator built with KnockoutJS for data-binding and bootstrap styling.</p>
+    </div>
+
+  </div>
 </div>
 
 <div class="footer">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <p class="text-center">Copyright Tize 2015</p>
+        <p class="text-center">Copyright Nicholas C. Morrell 2016</p>
       </div>
     </div>
   </div>
 </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
         <script src="js/index.js"></script>
 
-    
-    
-    
+
+
+
   </body>
 </html>
