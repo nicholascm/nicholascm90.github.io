@@ -32,7 +32,6 @@
     <div class="collapse navbar-collapse" id="mainHeader">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Home</span class="sr-only"></span></a></li>
-        <li><a href="#aboutMe">About Me</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -79,7 +78,7 @@
     <div ng-repeat = "item in portfolio.getFullStack()" class="col-md-12">
 
       <div class="thumbnail card">
-        <a name="{{item.shortName}}"></a>
+        <a class = "anchor" name="{{item.shortName}}"></a>
         <div class="caption">
           <h3><a href = "{{item.hostedURL}}">{{item.title}}</a></h3>
           <p>{{item.description}}</p>
@@ -95,7 +94,7 @@
       <div ng-repeat = "item in portfolio.getBackEnd()" class="col-md-12">
 
         <div class="thumbnail card">
-          <a name="{{item.shortName}}"></a>
+          <a class = "anchor" name="{{item.shortName}}"></a>
           <div class="caption">
             <h3><a href = "{{item.hostedURL}}">{{item.title}}</a></h3>
             <p>{{item.description}}</p>
