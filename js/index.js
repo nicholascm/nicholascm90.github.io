@@ -7,7 +7,7 @@ angular.module('portfolio', [])
   this.projectData = [{
         "githubURL": "https://github.com/nicholascm90/poll-people",
         "hostedURL": "https://upollster.herokuapp.com/",
-        "description": "This is a MEAN (Mongo, Express, Angular, Node) app that utilizes Angular.js and Boostrap for the front end, and Node.JS, Express.js, and MongoDB for the server and database.",
+        "description": "This is a MEAN (Mongo, Express, Angular, Node) app that utilizes Angular.js and Boostrap for the front end, and Node.JS, Express.js, and MongoDB for the server and database. Passport.js is used for user authentication.",
         "title": "Upollster: An App for Polls!",
         "category": "Full Stack",
         "shortName": "PollApp"
