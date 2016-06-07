@@ -4,15 +4,11 @@ angular.module('portfolio', [])
 
 .controller('PortfolioController', function() {
 
-  this.sample = "hey";
-
-
-
   this.projectData = [{
         "githubURL": "https://github.com/nicholascm90/poll-people",
         "hostedURL": "https://upollster.herokuapp.com/",
         "description": "This is a MEAN (Mongo, Express, Angular, Node) app that utilizes Angular.js and Boostrap for the front end, and Node.JS, Express.js, and MongoDB for the server and database.",
-        "title": "Upollster: A Full Stack App for Creating/Sharing Polls",
+        "title": "Upollster: An App for Polls!",
         "category": "Full Stack",
         "shortName": "PollApp"
       }, {
@@ -26,7 +22,7 @@ angular.module('portfolio', [])
         "githubURL": "https://github.com/nicholascm90/alternative-url",
         "hostedURL": "https://fierce-everglades-29355.herokuapp.com/",
         "description": "A small service providing even smaller URLs. This project built with Bootstrap, Node.js, and Express.js.",
-        "title": "Alternative URL",
+        "title": "Alternative URL Generator",
         "category": "Back End",
         "shortName": "AlternativeURL"
       },{
@@ -40,7 +36,7 @@ angular.module('portfolio', [])
         "githubURL": "https://github.com/nicholascm90/image-search-aggregator",
         "hostedURL": "https://mysterious-badlands-94593.herokuapp.com/whoami",
         "description": "This service provides information about the machine of the request.",
-        "title": "Who Am I?",
+        "title": "Who Am I Service?",
         "category": "Back End",
         "shortName": "WhoAmI"
       }, {
