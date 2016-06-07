@@ -2,19 +2,20 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>Tize</title>
+    <title>Nicholas Morrell</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
     <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+
   </head>
 
-  <body>
+  <body ng-app="portfolio">
+    <div ng-controller="PortfolioController as portfolio">
 
-    <head>
-  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-</head>
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -49,18 +50,92 @@
   </div>
 </nav>
 
+
 <div class="jumbotron">
   <div class="container">
-    <h1>Nicholas C. Morrell</h1>
-    <p>Welcome! Check out my projects below!</p>
-    <a class="btn btn-success btn-lg" href="http://www.github.com/nicholascm90">Github</a>
-    </button>
-    <a class= "btn btn-success btn-lg" href='https://www.linkedin.com/in/nicholasmorrell'>LinkedIn</a>
+    <div class = "col-sm-9">
+      <h1>Nicholas C. Morrell</h1>
+      <p>Welcome! Check out my projects below.</p>
+      <a class="btn btn-success btn-lg" href="http://www.github.com/nicholascm90">Github</a>
+      </button>
+      <a class= "btn btn-success btn-lg" href='https://www.linkedin.com/in/nicholasmorrell'>LinkedIn</a>
+    </div>
+    <div class = "col-sm-3">
+      <img class = "img-responsive animated shake" src = "../img/profile.jpg">
+    </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class = "text-left">
+      <h1 class="headerText">Full Stack</h1>
+    </div>
+
+    <div ng-repeat = "item in portfolio.getFullStack()" class="col-md-12">
+
+      <div class="thumbnail card">
+        <a name="{{item.shortName}}"></a>
+        <div class="caption">
+          <h3><a href = "{{item.hostedURL}}">{{item.title}}</a></h3>
+          <p>{{item.description}}</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class = "text-left">
+        <h1 class="headerText">Back End</h1>
+      </div>
+
+      <div ng-repeat = "item in portfolio.getBackEnd()" class="col-md-12">
+
+        <div class="thumbnail card">
+          <a name="{{item.shortName}}"></a>
+          <div class="caption">
+            <h3><a href = "{{item.hostedURL}}">{{item.title}}</a></h3>
+            <p>{{item.description}}</p>
+          </div>
+
+        </div>
+      </div>
+
+
+<!--header for Front End Projects (not yet converted to Angular)-->
+
+<div class = "text-left">
+  <h1 class="headerText">Front End</h1>
+</div>
+
+<!--Dr. Simon -->
+<div class="col-md-12">
+  <div class="thumbnail card">
+    <a name="DrSimon"></a>
+    <p data-height="459" data-theme-id="13542" data-slug-hash="wMozRP" data-default-tab="result" data-user="nicholascm90" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/nicholascm90/pen/wMozRP/">Dr. Simon</a> by Nicholas (<a href="http://codepen.io/nicholascm90">@nicholascm90</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+    <div class="caption">
+      <h3><a href = "http://codepen.io/nicholascm90/pen/wMozRP/">Dr. Simon</a></h3>
+      <p>Dr. Simon is a project built with Angular.js, Bootstrap, Animate.css and mimics the popular "Simon Says" game where the user must copy the moves of the computer.</p>
+    </div>
   </div>
 </div>
 
+<!--Tictactoe -->
+<div class="col-md-12">
+  <div class="thumbnail card">
+    <a name="Tictactoe"></a>
+    <p data-height="300" data-theme-id="13542" data-slug-hash="meaMEo" data-default-tab="result" data-user="nicholascm90" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/nicholascm90/pen/meaMEo/">tictactoe | AI</a> by Nicholas (<a href="http://codepen.io/nicholascm90">@nicholascm90</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+    <div class="caption">
+      <h3><a href = "http://codepen.io/nicholascm90/pen/meaMEo/">Tictactoe</a></h3>
+      <p>Tictactoe is built with Angular.js and Bootstrap and can be played with 1 or 2 players.</p>
+    </div>
+    </div>
+  </div>
 
-<div class="col-md-6 col-sm-12">
+<!--Pomodoro Clock -->
+
+<div class="col-md-12">
   <div class="thumbnail card">
     <a name="PomodoroClock"></a>
     <p data-height="459" data-theme-id="13542" data-slug-hash="JYPNaQ" data-default-tab="result" data-user="nicholascm90" class='codepen'>See the Pen <a href='http://codepen.io/nicholascm90/pen/JYPNaQ/'>Pomodoro Clock</a> by Nicholas (<a href='http://codepen.io/nicholascm90'>@nicholascm90</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
@@ -74,7 +149,25 @@
   </div>
 </div>
 
-<div class="col-md-6 col-sm-12">
+<!--WikiSearch-->
+<div class="col-md-12">
+  <div class="thumbnail card">
+    <a name="WikiSearch"></a>
+    <p data-height="459" data-theme-id="13542" data-slug-hash="xwzOBK" data-default-tab="result" data-user="nicholascm90" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/nicholascm90/pen/xwzOBK/">Wiki Search</a> by Nicholas (<a href="http://codepen.io/nicholascm90">@nicholascm90</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+    <div class="caption">
+      <h3><a href = "http://codepen.io/nicholascm90/pen/xwzOBK/">Wikipedia Search</a></h3>
+      <p>This page allows the user to search using the Wikipedia API, or search fora Random article. Angular.js and Materialize.css are used in this project.</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!--TwitchAPI-->
+
+<div class="col-sm-12">
   <div class="thumbnail card">
     <a name="TwitchAPI"></a>
     <p data-height="459" data-theme-id="13542" data-slug-hash="ojLvMY" data-default-tab="result" data-user="nicholascm90" class='codepen'>See the Pen <a href='http://codepen.io/nicholascm90/pen/ojLvMY/'>ReactJS | Twitch JSON API Generic</a> by Nicholas (<a href='http://codepen.io/nicholascm90'>@nicholascm90</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
@@ -87,12 +180,29 @@
   </div>
 </div>
 
-<div class="col-md-6 col-sm-12">
+<!--quoteMachine-->
+
+<div class="col-sm-12">
+  <div class="thumbnail">
+    <a name="RandomQuoteMachine"></a>
+    <p data-height="459" data-theme-id="13542" data-slug-hash="RPzXgm" data-default-tab="result" data-user="nicholascm90" class='codepen'>See the Pen <a href='http://codepen.io/nicholascm90/pen/RPzXgm/'>Chesterton and Lewis Random Quotes</a> by Nicholas (<a href='http://codepen.io/nicholascm90'>@nicholascm90</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+    <a name="RandomQuoteMachine"></a>
+    <!--<img class="img-responsive" src="http://historycooperative.org/wp-content/uploads/2014/03/Vatican-city.jpg">-->
+    <div class="caption">
+      <h3><a href = "http://codepen.io/nicholascm90/full/RPzXgm/">Random Quote Machine</a></h3>
+      <p>This page displays quotes from C.S. Lewis and G.K. Chesterton at random when the user clicks or pushes any key down. This project uses Bootstrap and jQuery.</p>
+    </div>
+
+  </div>
+</div>
+
+<!--calculator -->
+<div class="col-sm-12">
   <div class="thumbnail card">
     <a name="Calculator"></a>
     <p data-height="503" data-theme-id="13542" data-slug-hash="rOdybw" data-default-tab="result" data-user="nicholascm90" class='codepen'>See the Pen <a href='http://codepen.io/nicholascm90/pen/rOdybw/'>Calculator using knockoutJS</a> by Nicholas (<a href='http://codepen.io/nicholascm90'>@nicholascm90</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-
+    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
     <div class="caption">
       <h3><a href = "http://codepen.io/nicholascm90/pen/ojLvMY/">Calculator</a></h3>
       <p>This project is a calculator built with KnockoutJS for data-binding and bootstrap styling.</p>
@@ -110,13 +220,12 @@
     </div>
   </div>
 </div>
+
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
-
-        <script src="js/index.js"></script>
-
-
-
-
+    <script src="js/angular.min.js"></script>
+    <script src="js/index.js"></script>
+  </div>
+  </div>
   </body>
 </html>

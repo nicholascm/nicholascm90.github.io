@@ -7,12 +7,22 @@
   padding-bottom: 75px;
 }
 
+body {
+  background-color: #7DCED2;
+}
+
 .card {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.headerText {
+  border-bottom-style: solid;
+  border-radius: 1px;
+  border-color: black;
 }
 
 /*cutoff */
 
 h1 {
-  font-family: Roboto; 
+  font-family: Roboto;
 }
