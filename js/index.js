@@ -4,7 +4,16 @@ angular.module('portfolio', [])
 
 .controller('PortfolioController', function() {
 
-  this.projectData = [{
+  this.projectData = [
+    {
+        "githubURL": "https://github.com/nicholascm90/task-it",
+        "hostedURL": "https://tasklife.herokuapp.com/",
+        "description": "Full-stack to-do list featuring task-text parsing for setting your due date (e.g. 'Finish this up by Friday' will calculate date of the next Friday and apply as due date). Built with PHP/Laravel/Postgres, Javascript, jQuery, Bootstrap, and FontAwesome icons.",
+        "title": "TaskLife: App for Getting Things Done",
+        "category": "Full Stack",
+        "shortName": "TaskLife"
+      },
+    {
         "githubURL": "https://github.com/nicholascm90/poll-people",
         "hostedURL": "https://upollster.herokuapp.com/",
         "description": "This is a MEAN (Mongo, Express, Angular, Node) app that utilizes Angular.js and Boostrap for the front end, and Node.JS, Express.js, and MongoDB for the server and database. Passport.js is used for user authentication.",
