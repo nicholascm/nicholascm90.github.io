@@ -22,21 +22,21 @@ angular.module('portfolio', [])
         "shortName": "PollApp"
       }, {
         "githubURL": "https://github.com/nicholascm90/file-meta",
-        "hostedURL": "https://salty-spire-98994.herokuapp.com/",
+        "hostedURL": "https://fileinfo.herokuapp.com/",
         "description": "This app receives an uploaded file and returns a response with metadata about the file.",
         "title": "File Metadata",
         "category": "Full Stack",
         "shortName": "FileMetadata"
       },  {
         "githubURL": "https://github.com/nicholascm90/alternative-url",
-        "hostedURL": "https://fierce-everglades-29355.herokuapp.com/",
+        "hostedURL": "https://otherurl.herokuapp.com/",
         "description": "A small service providing even smaller URLs. This project built with Bootstrap, Node.js, and Express.js.",
         "title": "Alternative URL Generator",
         "category": "Back End",
         "shortName": "AlternativeURL"
       },{
         "githubURL": "https://github.com/nicholascm90/image-search-aggregator",
-        "hostedURL": "https://fierce-everglades-82648.herokuapp.com/",
+        "hostedURL": "https://imageaggregator.herokuapp.com/",
         "description": "An image aggregation api with a class which can be provided a list of credentials and return JSON for image search results. Each added API should have a mapping function to the desired JSON model.",
         "title":"Image Search Aggregator",
         "category":"Back End",
