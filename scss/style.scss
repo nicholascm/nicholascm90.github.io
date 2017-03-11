@@ -5,7 +5,11 @@ $black: black;
 
 p {
   font-family: 'Nunito', sans-serif;
-  font-size: 20px;
+  font-size: 15px;
+}
+
+p.tiny {
+  font-size: 10px;
 }
 
 h1 {
@@ -60,6 +64,9 @@ body {
   padding: 15px;
   width: 100%;
 }
+.paragraph-text:hover {
+  opacity: 1;
+}
 
 .buttons {
   padding: 15px;
@@ -94,5 +101,12 @@ body {
   margin: 1px;
 }
 
+.footer {
+  padding: 20px;
+  color: white;
+  width: 100%; 
+  background-color: black; 
+  height: 60px;
+}
 
 

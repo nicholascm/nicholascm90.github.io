@@ -23,17 +23,21 @@
         <h1>Nicholas C. Morrell</h1>
       </div>
       <div class="buttons">
-        <button href="https://linkedin.com/nicholascm90" class="btn btn-social"><i class="fa fa-linkedin"></i> LinkedIn</button>
-        <button href="https://github.com/nicholascm90" class="btn btn-social"><i class="fa fa-github"></i> GitHub</button>
+        <a href="https://linkedin.com/nicholascm90" class="btn btn-social"><i class="fa fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/nicholascm90" class="btn btn-social"><i class="fa fa-github"></i> GitHub</a>
       </div>
       <div v-for="topic in info" class="topic">
         <h3 class="text-center">{{ topic.title }}</h3>
         <div class="paragraph-text">
           <p>{{ topic.description }}</p>
+          <img v-if="topic.image" :src="topic.image" width="200px;">
         </div>
       </div>
     </div>
   </div>
+</div>
+<div class="footer">
+  <p class="tiny text-center">Copyright © Nicholas Morrell 2017. All Rights Reserved</p>
 </div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>

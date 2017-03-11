@@ -12,7 +12,7 @@ new Vue({
       },
       {
         title: "Current Work", 
-        description: "Right now I'm a developer for a firm building web applications using Vue.js (an awesome library similar to ReactJS) and Laravel, an MVC framework for PHP.",
+        description: "Right now I'm a developer for a firm doing full stack development using Vue.js (an awesome library similar to ReactJS), Laravel, an MVC framework for PHP, and SASS.",
         image: false
       }, 
       {
@@ -21,8 +21,8 @@ new Vue({
       image: "https://connect.ufl.edu/eng/syllabi/SiteAssets/SitePages/Home/GElogo.jpg"
       }, 
       {
-      title: "Personal Projects", 
-      description: "I thoroughly enjoy working on side-projects with Typescript, Javascript, C#, PHP, etc. See my github for examples of things I'm working on or have worked on in the past. ", 
+      title: "Skills + Personal Projects", 
+      description: "I thoroughly enjoy working on side-projects with Typescript, Javascript, C#, PHP, etc. I've worked on a hybrid mobile application, single page apps, and traditional MVC apps built with PHP or Ruby.", 
       image: false
       }
     ],
