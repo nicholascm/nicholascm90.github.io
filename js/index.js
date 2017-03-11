@@ -12,7 +12,7 @@ new Vue({
       },
       {
         title: "Current Work", 
-        description: "Right now I'm a developer for a firm doing full stack development using Vue.js (an awesome library similar to ReactJS), Laravel, an MVC framework for PHP, and SASS.",
+        description: "Right now I'm a developer for a firm doing full stack development using Vue.js (an awesome library similar to ReactJS), Laravel, an MVC framework for PHP, and Sass. Also, Docker/containerization is amazing.",
         image: false
       }, 
       {
