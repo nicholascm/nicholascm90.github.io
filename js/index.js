@@ -1,83 +1,60 @@
-var ProjectData =
-
-angular.module('portfolio', [])
-
-.controller('PortfolioController', function() {
-
-  this.projectData = [
-    {
-        "githubURL": "https://github.com/nicholascm90/task-it",
-        "hostedURL": "https://tasklife.herokuapp.com/",
-        "description": "Full-stack to-do list featuring task-text parsing for setting your due date (e.g. 'Finish this up by Friday' will calculate date of the next Friday and apply as due date). Built with PHP/Laravel/Postgres, Javascript, jQuery, Bootstrap, and FontAwesome icons.",
-        "title": "TaskLife: App for Getting Things Done",
-        "category": "Full Stack",
-        "shortName": "TaskLife"
+new Vue({
+  el: '#portfolio',
+  mounted() {
+    console.log('mounted');
+  },
+  data: {
+    queryText: "",
+    info: [{
+        title: "About Me", 
+        description: "Lifelong learner. Professional developer. Former healthcare software product manager. Engineer. Lover of learning new languages/tech and working with a team.",
+        image: false
       },
-    {
-        "githubURL": "https://github.com/nicholascm90/poll-people",
-        "hostedURL": "https://upollster.herokuapp.com/",
-        "description": "This is a MEAN (Mongo, Express, Angular, Node) app that utilizes Angular.js and Boostrap for the front end, and Node.JS, Express.js, and MongoDB for the server and database. Passport.js is used for user authentication.",
-        "title": "Upollster: An App for Polls!",
-        "category": "Full Stack",
-        "shortName": "PollApp"
-      }, {
-        "githubURL": "https://github.com/nicholascm90/file-meta",
-        "hostedURL": "https://fileinfo.herokuapp.com/",
-        "description": "This app receives an uploaded file and returns a response with metadata about the file.",
-        "title": "File Metadata",
-        "category": "Full Stack",
-        "shortName": "FileMetadata"
-      },  {
-        "githubURL": "https://github.com/nicholascm90/alternative-url",
-        "hostedURL": "https://otherurl.herokuapp.com/",
-        "description": "A small service providing even smaller URLs. This project built with Bootstrap, Node.js, and Express.js.",
-        "title": "Alternative URL Generator",
-        "category": "Back End",
-        "shortName": "AlternativeURL"
-      },{
-        "githubURL": "https://github.com/nicholascm90/image-search-aggregator",
-        "hostedURL": "https://imageaggregator.herokuapp.com/",
-        "description": "An image aggregation api with a class which can be provided a list of credentials and return JSON for image search results. Each added API should have a mapping function to the desired JSON model.",
-        "title":"Image Search Aggregator",
-        "category":"Back End",
-        "shortName": "ImageSearchAggregator"
-      }, {
-        "githubURL": "https://github.com/nicholascm90/image-search-aggregator",
-        "hostedURL": "https://mysterious-badlands-94593.herokuapp.com/whoami",
-        "description": "This service provides information about the machine of the request.",
-        "title": "Who Am I Service?",
-        "category": "Back End",
-        "shortName": "WhoAmI"
-      }, {
-        "githubURL": "https://github.com/nicholascm90/timestamp_microscopic_service",
-        "hostedURL": "https://fierce-atoll-74521.herokuapp.com/June%206,%202016",
-        "description": "A microservice providing the unix and natural time when provided with either.",
-        "title":"Time Stamp Microservice",
-        "category":"Back End",
-        "shortName": "TimeStampMicroservice"
+      {
+        title: "Current Work", 
+        description: "Right now I'm a developer for a firm building web applications using Vue.js (an awesome library similar to ReactJS) and Laravel, an MVC framework for PHP.",
+        image: false
+      }, 
+      {
+      title: "Education", 
+      description: "I received my Bachelor's degree in Biological Engineering and a Master's in Biomedical Engineering from the University of Florida.", 
+      image: "https://connect.ufl.edu/eng/syllabi/SiteAssets/SitePages/Home/GElogo.jpg"
+      }, 
+      {
+      title: "Personal Projects", 
+      description: "I thoroughly enjoy working on side-projects with Typescript, Javascript, C#, PHP, etc. See my github for examples of things I'm working on or have worked on in the past. ", 
+      image: false
       }
-    ];
-
-  this.getFullStack = function() {
-      var fullStackProjects = this.projectData.filter(function(project) { return project.category == "Full Stack"});
-      return fullStackProjects;
+    ],
+    projects: [{
+      title: 'Maxout',
+      description: 'An app for tracking workout progress',
+      languages: ['PHP', 'Javascript', 'CSS'],
+      concepts: ['MVC', 'OOP'],
+      libraries: ['ChartJS', 'jQuery', 'Laravel'],
+      demo: 'https://google.com',
+      repo: 'https://github.com'
+    }, {
+      title: 'Count Me In',
+      description: "Find food. Say you're going there tonight!",
+      languages: ['Typescript', 'CSS', 'PHP'],
+      concepts: ['MVC', 'single page app', 'Hybrid App'],
+      libraries: ['AngularJS', 'Ionic', 'Laravel'],
+      demo: 'https://google.com',
+      repo: 'https://github.com'
+    }, {
+      title: 'Upollster',
+      description: 'Build polls, share them with your friends.',
+      languages: ['Node.js', 'Javascript', 'CSS'],
+      concepts: ['NoSQL', 'single page app'],
+      libraries: ['AngularJS', 'ExpressJS', 'Bootstrap'],
+      demo: 'https://google.com',
+      repo: 'https://github.com'
+    }],
+  }, 
+  computed: {
+    filteredProjects() {
+      return this.projects.filter(x => (x.description.indexOf(this.queryText) >= 0 || x.title.indexOf(this.queryText) >= 0)); 
     }
-
-  this.getBackEnd = function() {
-      var backEndProjects = this.projectData.filter(function(project) { return project.category == "Back End"});
-      return backEndProjects;
-    }
-
-    console.log(this.getFullStack());
-
-/*
-{
-  "githubURL": "",
-  "hostedURL": "",
-  "description": "",
-  "title":""
-  "category":"Back End",
-  "shortName":
-}
-*/
+  }
 });

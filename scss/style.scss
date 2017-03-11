@@ -1,3 +1,8 @@
+//typography
+$white: white;
+$gray: gray;
+$black: black;
+
 p {
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
@@ -18,7 +23,7 @@ h6 {
 }
 
 hr {
-  color: white;
+  color: $white;
 }
 
 body {
@@ -79,12 +84,15 @@ body {
 .project {
   border-color: #fff;
   height: 100%;
-}
-.project .header {
-  display: inline;
+  .header {
+    display: inline;
+  }
 }
 
 .badge {
   border-radius: 0px;
   margin: 1px;
 }
+
+
+
