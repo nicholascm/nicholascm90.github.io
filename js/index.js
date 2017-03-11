@@ -22,7 +22,7 @@ new Vue({
       }, 
       {
       title: "Skills + Personal Projects", 
-      description: "I thoroughly enjoy working on side-projects with Typescript, Javascript, C#, PHP, etc. I've worked on a hybrid mobile application, single page apps, and traditional MVC apps built with PHP or Ruby. I especially like thinking through and creating data models.", 
+      description: "I thoroughly enjoy working on side-projects with Javascript, Node.js, PHP, Typescript, C# etc. I've worked on single page apps, a hybrid mobile application, and traditional MVC apps built with PHP or Ruby. I especially like thinking through and creating data models and crafting a great user experience.", 
       image: false
       }
     ],
