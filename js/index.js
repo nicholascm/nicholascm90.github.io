@@ -1,8 +1,5 @@
 new Vue({
   el: '#portfolio',
-  mounted() {
-    console.log('mounted');
-  },
   data: {
     queryText: "",
     info: [{
@@ -22,19 +19,11 @@ new Vue({
       }, 
       {
       title: "Skills + Personal Projects", 
-      description: "I thoroughly enjoy working on side-projects with Javascript, Node.js, PHP, Typescript, C# etc. I've worked on single page apps, a hybrid mobile application, and traditional MVC apps built with PHP or Ruby. I especially like thinking through and creating data models and crafting a great user experience.", 
+      description: "I thoroughly enjoy working on side-projects with Javascript, Node.js, PHP, Typescript, C# etc. I've worked on single page apps, a hybrid mobile application, and traditional MVC apps built with PHP. I especially like thinking through and creating data models and crafting a great user experience.", 
       image: false
       }
     ],
     projects: [{
-      title: 'Maxout',
-      description: 'An app for tracking workout progress',
-      languages: ['PHP', 'Javascript', 'CSS'],
-      concepts: ['MVC', 'OOP'],
-      libraries: ['ChartJS', 'jQuery', 'Laravel'],
-      demo: 'https://google.com',
-      repo: 'https://github.com'
-    }, {
       title: 'Count Me In',
       description: "Find food. Say you're going there tonight!",
       languages: ['Typescript', 'CSS', 'PHP'],
@@ -48,6 +37,14 @@ new Vue({
       languages: ['Node.js', 'Javascript', 'CSS'],
       concepts: ['NoSQL', 'single page app'],
       libraries: ['AngularJS', 'ExpressJS', 'Bootstrap'],
+      demo: 'https://google.com',
+      repo: 'https://github.com'
+    }, {
+      title: 'Maxout',
+      description: 'An app for tracking workout progress',
+      languages: ['PHP', 'Javascript', 'CSS'],
+      concepts: ['MVC', 'OOP'],
+      libraries: ['ChartJS', 'jQuery', 'Laravel'],
       demo: 'https://google.com',
       repo: 'https://github.com'
     }],

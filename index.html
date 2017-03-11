@@ -33,6 +33,14 @@
           <img v-if="topic.image" :src="topic.image" width="200px;">
         </div>
       </div>
+      <div class="paragraph-text">
+      <span v-for="project in projects">
+        <a :href="project.repo">{{ project.title }}</a><p>{{ project.description }}</p>
+        <span v-for="concept in project.concepts" class="badge badge-info">{{ concept }}</span>
+        <span v-for="library in project.libraries" class="badge badge-success">{{ library }}</span>
+        <hr>
+      </span>
+      </div>
     </div>
   </div>
 </div>
