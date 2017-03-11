@@ -30,7 +30,7 @@ new Vue({
       concepts: ['MVC', 'single page app', 'Hybrid App'],
       libraries: ['AngularJS', 'Ionic', 'Laravel'],
       demo: 'https://google.com',
-      repo: 'https://github.com'
+      repo: 'https://github.com/nicholascm90/count-me-in'
     }, {
       title: 'Upollster',
       description: 'Build polls, share them with your friends.',
@@ -38,7 +38,7 @@ new Vue({
       concepts: ['NoSQL', 'single page app'],
       libraries: ['AngularJS', 'ExpressJS', 'Bootstrap'],
       demo: 'https://google.com',
-      repo: 'https://github.com'
+      repo: 'https://github.com/nicholascm90/poll-people'
     }, {
       title: 'Maxout',
       description: 'An app for tracking workout progress',
@@ -46,7 +46,7 @@ new Vue({
       concepts: ['MVC', 'OOP'],
       libraries: ['ChartJS', 'jQuery', 'Laravel'],
       demo: 'https://google.com',
-      repo: 'https://github.com'
+      repo: 'https://github.com/nicholascm90/maxout'
     }],
   }, 
   computed: {
